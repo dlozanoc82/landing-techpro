@@ -174,16 +174,38 @@ img {
 
 /* About - US */
 .about-us {
-    background-image: linear-gradient(to bottom, transparent 50%, var(--colorPrimary) 0%), url(../img/imagen-mujer.jpg);
     background-position: right;
     background-repeat: repeat, no-repeat;
     background-size: 100%, 110rem;
 }
 
+.notavif.notwebp .about-us {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--colorPrimary) 0%), url(../img/imagen-mujer.webp);
+}
+
+.webp .about-us {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--colorPrimary) 0%), url(../img/imagen-mujer.avif);
+}
+
+.avif .about-us {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--colorPrimary) 0%), url(../img/imagen-mujer.avif);
+}
+
 @media(min-width: 768px) {
     .about-us {
-        background-image: linear-gradient(to left, transparent 50%, var(--colorPrimary) 0%), url(../img/imagen-mujer.jpg);
         background-repeat: repeat, no-repeat;
+    }
+
+    .notavif.notwebp .about-us {
+        background-image: linear-gradient(to left, transparent 50%, var(--colorPrimary) 0%), url(../img/imagen-mujer.jpg);
+    }
+
+    .webp .about-us {
+        background-image: linear-gradient(to left, transparent 50%, var(--colorPrimary) 0%), url(../img/imagen-mujer.webp);
+    }
+
+    .avif .about-us {
+        background-image: linear-gradient(to left, transparent 50%, var(--colorPrimary) 0%), url(../img/imagen-mujer.avif);
     }
 }
 
@@ -338,6 +360,18 @@ img {
     background-size: 100%, 70rem;
 }
 
+.notavif.notwebp .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
+}
+
+.webp .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.webp);
+}
+
+.avif .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.avif);
+}
+
 .newsletter-content {
     display: grid;
     grid-template-rows: repeat(2, 30rem);
@@ -347,10 +381,21 @@ img {
 @media(min-width: 768px) {
 
     .newsletter {
-        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
         background-position: center, -21rem 0rem;
         background-size: 100%, 100rem;
         padding: 10rem 0;
+    }
+
+    .notavif.notwebp .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
+    }
+
+    .webp .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.webp);
+    }
+
+    .avif .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.webp);
     }
 
     .newsletter-content {
